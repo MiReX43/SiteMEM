@@ -1,0 +1,365 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background: #2f3f44;
+  cursor: url('thoothcursor.png')25 30, auto;
+}
+
+#welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(69, 108, 163, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1; /* Начальное значение непрозрачности */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Анимация непрозрачности и трансформации */
+}
+
+#welcome-screen.hidden {
+  opacity: 0;
+  transform: translateY(100%); /* При скрытии перемещаем элемент вниз на 100% высоты */
+}
+
+#welcome-content {
+  text-align: center;
+  color: white;
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: url('thoothcursorChange.png')30 35 , auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Анимация изменения размера при наведении */
+}
+
+#start-button:hover {
+  transform: scale(1.1); /* Увеличиваем размер при наведении на 10% */
+}
+
+
+.text {
+  white-space: nowrap;
+  border-right: 3px solid rgb(239, 255, 20);
+  width: 17ch;
+  overflow: hidden;
+  font-size: 5rem;
+  color: #fff;
+  animation: texto 3s 1 steps(30), cursor .5s infinite;
+
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes texto {0% {width: 0}}
+@keyframes cursor {50% {border-color: transparent}}
+
+
+#card1{
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card2{
+  position: fixed;
+  top: 50px;
+  left: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card3{
+  position: fixed;
+  top: 50px;
+  left: 1050px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card4{
+  position: fixed;
+  top: 50px;
+  left: 1550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card5{
+  position: fixed;
+  top: 500px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card6{
+  position: fixed;
+  top: 500px;
+  left: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card7{
+  position: fixed;
+  top: 500px;
+  left: 1050px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card8{
+  position: fixed;
+  top: 500px;
+  left: 1550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card9{
+  position: fixed;
+  top: 50px;
+  left: 1975px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card10{
+  position: fixed;
+  top: 50px;
+  left: 2475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card11{
+  position: fixed;
+  top: 50px;
+  left: 2975px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card12{
+  position: fixed;
+  top: 50px;
+  left: 3465px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card13{
+  position: fixed;
+  top: 500px;
+  left: 1975px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card14{
+  position: fixed;
+  top: 500px;
+  left: 2475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card15{
+  position: fixed;
+  top: 500px;
+  left: 2975px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+#card16{
+  position: fixed;
+  top: 500px;
+  left: 3465px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+/* Стили для родительского блока */
+.card {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  border: 0px solid #ffffff;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.9);
+  cursor: url('thoothcursorChange.png') 30 35 , auto;
+  color: #000000;
+}
+
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product,
+.description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: #bbc4c8 ;
+  border-radius: 30px;
+}
+
+.product img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+/* Стили для кнопки описательного блока карточки товара */
+.description a {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f5dde1;
+}
+
+.product,
+.description {
+  backface-visibility: hidden;
+}
+
+.description {
+  box-sizing: border-box;
+  padding: 10px;
+  transform: rotateY(180deg);
+}
+
+.product,
+.description {
+  transition: 1s;
+}
+
+.card:hover .product {
+  transform: rotateY(180deg);
+}
+
+.card:hover .description {
+  transform: rotateY(360deg);
+}
+
+#scroll-button1 {
+  position: fixed;
+  top: 47.5%;
+  left: 10px;
+  background-color: #bbc4c8;
+  color: black;
+  border: none;
+  padding: 15px 20px;
+  cursor: url('thoothcursorChange.png') 30 35 , auto;
+  border-radius: 25px;
+  z-index: 9998;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+#scroll-button1:hover {
+  transform: scale(1.1); /* Увеличиваем размер при наведении на 10% */
+}
+
+#scroll-button2 {
+  position: fixed;
+  top: 47.5%;
+  right: 10px;
+  background-color: #bbc4c8;
+  color: black;
+  border: none;
+  padding: 15px 20px;
+  cursor: url('thoothcursorChange.png') 30 35, auto;
+  border-radius: 25px;
+  z-index: 9998;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+#scroll-button2:hover {
+  transform: scale(1.1); /* Увеличиваем размер при наведении на 10% */
+}
+
+#container {
+  display: flex;
+  width: 200%;
+  transition: transform 1s ease;  
+}
+
+video {
+
+  display: flex;
+  z-index: 9998;
+  border-radius: 25px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.9);
+  
+}
+
+#myVideo1 {
+
+  position: fixed;
+  top: 250px;
+  left: 4465px;
+  display: flex;
+  z-index: 9998;
+  
+
+}
